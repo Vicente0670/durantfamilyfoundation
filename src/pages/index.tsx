@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 import home from "@/styles/Home.module.css";
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Durant Family Foundation</title>
       </Head>
-      <script src="/scripts/index.js" async />
+      <Script src="/scripts/index.js" async />
 
       <div className="loader">
         <div className="loaderImage">
