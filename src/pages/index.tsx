@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>Durant Family Foundation</title>
       </Head>
-      <script src="/scripts/index.js" />
+      <script src="/scripts/index.js" async />
 
       <div className="loader">
         <div className="loaderImage">

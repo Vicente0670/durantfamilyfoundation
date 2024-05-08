@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" property="og:description" content="The Durant Family Foundation's Website." />
         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
-      <script src="/scripts/main.js" />
+      <script src="/scripts/main.js" async />
       
       <div className="header">
         <div className="logo"></div>
