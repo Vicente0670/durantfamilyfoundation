@@ -30,7 +30,13 @@
   pointer-events: auto;
 }
 .interactiveEmblem div:has(div:hover) {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  filter: brightness(1.25);
+}
+.interactiveEmblem div:has(div:active) {
+  transition: none;
+  transform: scale(.9);
+  filter: brightness(.75);
 }
 .interactiveEmblem .base {
   background-image: url("/media/emblem/base.png");
