@@ -7,7 +7,9 @@
   height: 100%;
   width: 100%;
   background: #00000080;
-  z-index: 256;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
 }
 .interactiveEmblem div {
   display: flex;
@@ -21,6 +23,7 @@
   background-repeat: no-repeat;
   transition: transform .25s;
   pointer-events: none;
+  cursor: pointer;
 }
 .interactiveEmblem div div {
   position: relative;
@@ -88,12 +91,22 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  background: #ffffff80;
+  background: #ffffffbb;
 }
 .main .infoContainer {
   margin: 5rem auto;
   height: auto;
-  width: 40rem;
+  min-width: 15rem;
+  max-width: 40rem;
+}
+.main .infoContainer h1 {
+  font-weight: 200;
+  overflow-wrap: break-word;
+  hyphens: manual;
+}
+.main .infoContainer p {
+  font-weight: 300;
+  color: #6F54A4;
 }
 .main .iconContainer {
   position: relative;

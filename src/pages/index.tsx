@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Script from "next/script";
 import home from "@/styles/Home.module.css";
 
 export default function Home() {
@@ -8,7 +7,7 @@ export default function Home() {
       <Head>
         <title>Durant Family Foundation</title>
       </Head>
-      <Script src="/scripts/index.js" async />
+      <script src="/scripts/index.js" />
 
       <div className="loader">
         <div className="loaderImage">
@@ -27,7 +26,8 @@ export default function Home() {
       <div className={home.main} id="main">
         <div className={home.container}>
           <div className={home.infoContainer}>
-            <h1>Durant Family Foundation</h1>
+            <h1>Durant Family Charitable Foundation</h1>
+            <p>Our mission, blablablablabla just kidding!1</p>
           </div>
           <div className={home.iconContainer} id="icon"></div>
         </div>
