@@ -1,12 +1,18 @@
 /* Button */
 .button {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: .5rem 1rem;
-  width: max-content;
-  outline: .125rem solid #7f64b5;
+  width: 100%;
+  max-width: max-content;
+  outline: .125rem solid #6F54A4;
   border-radius: .25rem;
+  word-break: break-all;
   text-decoration: none;
-  transition: background-color .25s, outline-color .25s;
+  transition: background-color .125s, color .125s;
+}
+.button:hover {
+  background-color: #6F54A4;
+  color: #eee;
 }
 /* Interactive Emblem */
 .interactiveEmblem {
@@ -201,7 +207,6 @@
 }
 .main .infoContainer p {
   font-weight: 300;
-  color: #6F54A4;
 }
 .main .iconContainer {
   position: relative;
@@ -261,9 +266,6 @@
   height: auto;
   max-width: 30rem;
 }
-.secondary .infoContainer * {
-  color: #6F54A4;
-}
 .tertiary {
   display: flex;
   justify-content: space-around;
@@ -283,18 +285,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 6rem 0;
+  padding: 3rem 0;
   height: 100%;
   width: 100%;
   background: #ffffffbb;
 }
 .tertiary .title {
-  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 1rem;
   height: auto;
   width: auto;
   max-width: 30rem;
 }
 .tertiary .carousel {
+  margin: 4rem 0;
   padding: 1rem 0;
   height: auto;
   width: 100%;

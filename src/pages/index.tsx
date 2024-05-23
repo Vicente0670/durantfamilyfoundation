@@ -58,7 +58,7 @@ export default function Home() {
           <div className={home.title}>
             <h2>Learn about us!</h2>
             <p>From our original founders, to the determined volunteers, everyone has a role to play. Our team has built this foundation for over a decade, and our organization has a story to tell.</p>
-            <Link className={home.button} href="/bio" title="Learn about the people behind the Durant Family Charitable Foundation."></Link>
+            <Link className={home.button} href="/bio" title="Learn about the people behind the Durant Family Charitable Foundation.">Learn More</Link>
           </div>
           <div className={home.carousel}>
             <div className={home.container2} id="carouselContainer">
