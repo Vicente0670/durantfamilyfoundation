@@ -1,9 +1,10 @@
 import home from "@/styles/Home.module.css";
+import Script from "next/script";
 
 export default function Home() {
   return (
     <>
-      <script src="/scripts/index.js" async />
+      <Script src="/scripts/index.js" />
 
       <div className="loader">
         <div className="loaderImage">
