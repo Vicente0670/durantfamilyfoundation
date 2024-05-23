@@ -15,7 +15,7 @@ function Loader() {
   emblemButton.push(document.getElementById("e-grad"));
   for (i = 0; i < emblemButton.length; i++) {
     emblemButton[i].addEventListener("click", infoTextShow);
-    emblemButton[i].setAttribute("name", ("text-"[i]))
+    emblemButton[i].setAttribute("aria-label", ("text-" + [i]))
   }
 
   exit = document.getElementById("exit");
