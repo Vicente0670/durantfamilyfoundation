@@ -79,7 +79,7 @@ function iconReset() {
 }
 function infoTextShow(e) {
   let x = e.target.getAttribute("aria-label");
-  let filter = "brightness(1.5)";
+  let filter = "brightness(1.75)";
   let scale = 2;
   let zIndex = 257;
 
@@ -96,28 +96,28 @@ function infoTextShow(e) {
     emblemButton[0].style.filter = filter;
     emblemButton[0].style.scale = scale;
     emblemButton[0].style.zIndex = zIndex;
-    emblemButton[0].style.translate = "12.5% 50%";
+    emblemButton[0].style.translate = "-10% 50%";
   }
   else if (x === "text-1") {
     infoParagraph[2].style.opacity = 1;
     emblemButton[1].style.filter = filter;
     emblemButton[1].style.scale = scale;
     emblemButton[1].style.zIndex = zIndex;
-    emblemButton[1].style.translate = "-12.5% 50%";
+    emblemButton[1].style.translate = "-40% 50%";
   }
   else if (x === "text-2") {
     infoParagraph[3].style.opacity = 1;
     emblemButton[2].style.filter = filter;
     emblemButton[2].style.scale = scale;
     emblemButton[2].style.zIndex = zIndex;
-    emblemButton[2].style.translate = "12.5% -50%";
+    emblemButton[2].style.translate = "-10% -33%";
   }
   else if (x === "text-3") {
     infoParagraph[4].style.opacity = 1;
     emblemButton[3].style.filter = filter;
     emblemButton[3].style.scale = scale;
     emblemButton[3].style.zIndex = zIndex;
-    emblemButton[3].style.translate = "-12.5% -50%";
+    emblemButton[3].style.translate = "-40% -33%";
   }
   else {
     return;

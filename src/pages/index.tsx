@@ -20,7 +20,7 @@ export default function Home() {
         <div className={home.grad} id="e-grad"><div></div></div>
         <div className={home.info} id="info">
           <div className={home.miniExit}><p>X</p></div>
-          <p>info 1</p>
+          <p></p>
           <p>infomration 2</p>
           <p>hajahahahah 3</p>
           <p>nononononon 4</p>
@@ -44,17 +44,18 @@ export default function Home() {
             </video>
           </div>
           <div className={home.infoContainer}>
-            <h3>Learn about us!</h3>
-            <p>Some of the things that we&apos;ve said aren&apos;t true. But that didn&apos;t stop us in 1945. Hah, what do you think I am, fool? I am an expert at nothing! But I&apos;m not a jack of all trades anymore, let&apos;s be honest. Additionally, I knew you were thinking that, but that&apos;s just me.</p>
-            <a href="/bio" title="Learn about the people behind the Durant Family Charitable Foundation.">Learn More</a>
+            <h3>Our Mission</h3>
+            <p>The mission of the Durant Family Charitable Foundation is to enrich the lives of youth, their families and community through education, athletic, and social programs.</p>
+            <h3></h3>
           </div>
         </div>
       </div>
       <div className={home.tertiary} id="tertiary">
         <div className={home.container}>
           <div className={home.title}>
-            <h3>Our Mission</h3>
-            <p>To enter in the most distracting and honest way possible, even though this isn&apos;t even the right one and I&apos;ve been lying to you all this whole entire time just to make up space for the actual statement.</p>
+            <h3>Learn about us!</h3>
+            <p>aaaaaaaaaaaaaa</p>
+            <a href="/bio" title="Learn about the people behind the Durant Family Charitable Foundation."></a>
           </div>
           <div className={home.carousel}>
             <div></div>
