@@ -22,10 +22,10 @@ export default function Home() {
         <div className={home.grad} id="e-grad"><div></div></div>
         <div className={home.info} id="info">
           <div className={home.miniExit}><p>X</p></div>
-          <p>This rose on our emblem represends our desire and passion for education and academic success. We want to educate others and see others succeed academically. We want others to knowledgeable and understand the important steps in life, and that&apos;s part of our mission and future goals.</p>
+          <p>The Purple Rose on our emblem is a highlight of Kevin Durant&apos;s grandmother. Kevin Durant&apos;s grandmother&apos;s name is Barbara Durant Davis.</p>
           <p></p>
           <p></p>
-          <p></p>
+          <p>This diploma on our emblem represends our desire and passion for education and academic success. We want to educate others and see others succeed academically. We want others to knowledgeable and understand the important steps in life, and that&apos;s part of our mission and future goals.</p>
         </div>
       </div>
 
