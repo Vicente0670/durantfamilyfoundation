@@ -6,7 +6,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background: #00000080;
+  background: #000000;
   opacity: 0;
   pointer-events: none;
   z-index: -1;
@@ -15,15 +15,47 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  align-items: flex-start;
   position: absolute;
   height: 100%;
   width: 100%;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  transition: transform .25s;
+  opacity: 0;
+  transition: transform .25s, opacity .25s;
   pointer-events: none;
   cursor: pointer;
+}
+.interactiveEmblem .exit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  max-height: 4rem;
+  max-width: 4rem;
+  background: #6F54A4;
+  border-bottom-right-radius: .5rem;
+  opacity: 0;
+  transition: transform .25s, opacity .25s, background-color .125s;
+  pointer-events: none;
+  z-index: 257;
+  cursor: pointer;
+}
+.interactiveEmblem .exit:hover {
+  background: #987dcd;
+}
+.interactiveEmblem .exit:active {
+  transition: transform .25s, opacity .25s;
+  background: #7f64b5;
+}
+.interactiveEmblem .exit p {
+  font-size: 2rem;
+  color: #121212;
+}
+.interactiveEmblem .exit p::selection {
+  background: transparent;
 }
 .interactiveEmblem div div {
   position: relative;
@@ -32,14 +64,53 @@
   transition: transform .25s ease;
   pointer-events: auto;
 }
-.interactiveEmblem div:has(div:hover) {
+.interactiveEmblem div:has(div:hover):not(.info) {
   transform: scale(1.1);
   filter: brightness(1.25);
 }
-.interactiveEmblem div:has(div:active) {
+.interactiveEmblem div:has(div:active):not(.info) {
   transition: none;
   transform: scale(.9);
   filter: brightness(.75);
+}
+.interactiveEmblem .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #00000080;
+  pointer-events: all;
+  cursor: default;
+  z-index: 999;
+}
+.interactiveEmblem .info .miniExit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  width: 4rem;
+  background-color: #7f64b5;
+  border-bottom-right-radius: .5rem;
+  opacity: 1;
+  transition: opacity .25s;
+  pointer-events: all;
+  cursor: pointer;
+}
+.interactiveEmblem .info .miniExit:hover {
+  background: #6F54A4;
+}
+.interactiveEmblem .info .miniExit p {
+  font-size: 2rem;
+  color: #121212;
+}
+.interactiveEmblem .info p {
+  position: absolute;
+  opacity: 0;
 }
 .interactiveEmblem .base {
   background-image: url("/media/emblem/base.png");
@@ -94,9 +165,10 @@
   background: #ffffffbb;
 }
 .main .infoContainer {
-  margin: 5rem auto;
+  margin: 0 auto;
+  padding: 1rem;
   height: auto;
-  min-width: 15rem;
+  width: 100%;
   max-width: 40rem;
 }
 .main .infoContainer h1 {
@@ -127,9 +199,6 @@
   scale: .9;
 }
 .secondary {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
   height: auto;
   width: 100%;
   background-image: url("/media/bg2.jpg");
@@ -137,12 +206,38 @@
   background-position: 50%;
   background-position-y: 0;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   border-bottom: 1rem solid #6F54A4;
 }
+.secondary .container {
+  padding: 8rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: #ffffffbb;
+}
 .secondary .videoContainer {
-  margin: 10rem 0;
-  height: 20rem;
-  width: 20rem;
+  margin: 2rem 1rem;
+  height: auto;
+  width: auto;
+  background: linear-gradient(180deg, #000, #6F54A4);
+  box-shadow: .75rem .75rem .5rem 0 #00000080;
+}
+.secondary .videoContainer video {
+  aspect-ratio: 16/9;
+  max-width: 35rem;
+  width: 90vw;
+}
+.secondary .infoContainer {
+  margin: 5rem 1rem;
+  height: auto;
+  max-width: 30rem;
+}
+.secondary .infoContainer * {
+  color: #6F54A4;
 }
 .tertiary {
   display: flex;
@@ -155,10 +250,33 @@
   background-position: 50%;
   background-position-y: 0;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   border-bottom: 1rem solid #6F54A4;
 }
 .tertiary .container {
-  margin: 10rem 0;
-  height: 20rem;
-  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0;
+  height: 100%;
+  width: 100%;
+  background: #ffffffbb;
+}
+.tertiary .title {
+  margin: 3rem 0;
+  height: auto;
+  width: auto;
+  max-width: 30rem;
+  resize: vertical;
+}
+.tertiary .carousel {
+  height: 1rem;
+  width: 100%;
+  background: #7f64b580;
+}
+@media screen and (max-width: 70rem) {
+  .secondary .container {
+    flex-wrap: wrap-reverse;
+  }
 }

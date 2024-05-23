@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta charSet="utf-8" />
-        <title>Durant Family Foundation</title>
+        <title>Durant Family Charitable Foundation</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" property="og:description" content="The Durant Family Foundation's Website." />
         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
-      <script src="/scripts/main.js" />
+      <script src="/scripts/main.js" async />
       
       <div className="header">
         <div className="logo"></div>

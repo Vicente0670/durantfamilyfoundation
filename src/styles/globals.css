@@ -18,7 +18,7 @@ html, body {
 }
 h1, h2, h3, h4, h5, h6, p, a {
   font-family: "Noto Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #121212;
+  color: #6F54A4;
 }
 h1 {
   font-size: 5rem;
@@ -28,22 +28,22 @@ h2 {
   font-size: 3.5rem;
 }
 h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 h4 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 h5 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 h6 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 p {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 a {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #6F54A4;
 }
 /* loader for home page */
