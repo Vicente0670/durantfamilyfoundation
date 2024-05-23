@@ -48,8 +48,7 @@ export default function Home() {
           <div className={home.infoContainer}>
             <h3>Our Mission</h3>
             <p>The mission of the Durant Family Charitable Foundation is to enrich the lives of youth, their families and community through education, athletic, and social programs.</p>
-            <p></p>
-            <h3></h3>
+            <a className={home.button} href="/">Understand our </a>
           </div>
         </div>
       </div>
