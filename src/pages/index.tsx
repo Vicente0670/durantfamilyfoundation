@@ -20,18 +20,19 @@ export default function Home() {
         <div className={home.grad} id="e-grad"><div></div></div>
         <div className={home.info} id="info">
           <div className={home.miniExit}><p>X</p></div>
-          <p></p>
+          <p>Symbolic of his love and passion for education and people who are educated.</p>
           <p>infomration 2</p>
           <p>hajahahahah 3</p>
-          <p>nononononon 4</p>
+          <p>This emblem represends our desire and passion to </p>
         </div>
       </div>
 
       <div className={home.main} id="main">
         <div className={home.container}>
           <div className={home.infoContainer}>
-            <h1>Durant Family Charitable Foundation</h1>
+            <h1>Durant Family Charitable Foundation</h1><br/>
             <p>A credible, non-profit organization founded to help others since 2013.</p>
+            <p>Interact with the emblem to get started!</p>
           </div>
           <div className={home.iconContainer} id="icon"></div>
         </div>
@@ -53,7 +54,7 @@ export default function Home() {
       <div className={home.tertiary} id="tertiary">
         <div className={home.container}>
           <div className={home.title}>
-            <h3>Learn about us!</h3>
+            <h2>!</h2>
             <p>aaaaaaaaaaaaaa</p>
             <a href="/bio" title="Learn about the people behind the Durant Family Charitable Foundation."></a>
           </div>

@@ -81,6 +81,9 @@
   height: 100%;
   width: 100%;
   background: #00000080;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   pointer-events: all;
   cursor: default;
   z-index: 999;
@@ -131,6 +134,7 @@
 }
 .interactiveEmblem .person {
   background-image: url("/media/emblem/person.png");
+  background-size: 35rem;
 }
 .interactiveEmblem .grad {
   background-image: url("/media/emblem/grad.png");
@@ -149,7 +153,7 @@
 }
 /* On Hover */
 .interactiveEmblem .base:has(.interactiveEmblem .base .div:hover) {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 /* Sections */
 .main {
@@ -279,12 +283,21 @@
   resize: vertical;
 }
 .tertiary .carousel {
-  height: 1rem;
+  padding: 1rem 0;
+  height: auto;
   width: 100%;
   background: #7f64b580;
 }
 @media screen and (max-width: 70rem) {
+  .main .infoContainer h1 {
+    font-size: 4rem;
+  }
   .secondary .container {
     flex-wrap: wrap-reverse;
+  }
+}
+@media screen and (max-width: 35rem) {
+  .interactiveEmblem .person {
+    background-size: 100%;
   }
 }

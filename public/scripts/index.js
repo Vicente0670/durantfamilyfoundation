@@ -96,21 +96,18 @@ function infoTextShow(e) {
     emblemButton[0].style.filter = filter;
     emblemButton[0].style.scale = scale;
     emblemButton[0].style.zIndex = zIndex;
-    emblemButton[0].style.translate = "-10% 50%";
+    emblemButton[0].style.translate = "-5% 50%";
   }
   else if (x === "text-1") {
     infoParagraph[2].style.opacity = 1;
-    emblemButton[1].style.filter = filter;
-    emblemButton[1].style.scale = scale;
-    emblemButton[1].style.zIndex = zIndex;
-    emblemButton[1].style.translate = "-40% 50%";
+    info.style.backgroundImage = "url('/media/emblem/county.png')";
   }
   else if (x === "text-2") {
     infoParagraph[3].style.opacity = 1;
     emblemButton[2].style.filter = filter;
     emblemButton[2].style.scale = scale;
     emblemButton[2].style.zIndex = zIndex;
-    emblemButton[2].style.translate = "-10% -33%";
+    emblemButton[2].style.translate = "-5% -33%";
   }
   else if (x === "text-3") {
     infoParagraph[4].style.opacity = 1;
@@ -151,4 +148,3 @@ document.addEventListener("DOMContentLoaded", Loader);
 // Program Director - Roderic A. Irby Jr.
 
 // Prince George County - Where the founder played basketball
-// Diploma - Symbolic of his love and passion for education and people who are educated.
