@@ -1,0 +1,116 @@
+.primary {
+  height: auto;
+  width: 100%;
+  background-image: url("/media/bg5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border-bottom: .5rem solid #6F54A4;
+}
+.primary .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12rem 1rem;
+  background: #ffffffcc;
+}
+.primary .container h2 {
+  word-break: break-all;
+}
+.secondary {
+  height: auto;
+  width: 100%;
+  background-image: url("/media/bg3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border-bottom: .5rem solid #6F54A4;
+}
+.secondary .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background: #ffffffcc;
+}
+.secondary .container .title {
+  width: 100%;
+}
+.secondary .container .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.secondary .container .content .image {
+  aspect-ratio: 16/9;
+  margin: 0 auto;
+  width: 20rem;
+  background-image: url("/media/ct.png");
+  background-size: cover;
+  box-shadow: .125rem .125rem .25rem 0 #00000080;
+}
+.tertiary {
+  height: auto;
+  width: 100%;
+  background-image: url("/media/bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border-bottom: .5rem solid #6F54A4;
+}
+.tertiary .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background: #ffffffcc;
+}
+.tertiary .container .title {
+  width: 100%;
+}
+.tertiary .container .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tertiary .container .content .image {
+  aspect-ratio: 16/9;
+  margin: 0 auto;
+  width: 20rem;
+  background-image: url("/media/ct.png");
+  background-size: cover;
+  box-shadow: .125rem .125rem .25rem 0 #00000080;
+}
+.quaternary {
+  height: auto;
+  width: 100%;
+  background-image: url("/media/bg4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border-bottom: .5rem solid #6F54A4;
+}
+.quaternary .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background: #ffffffcc;
+}
+.quaternary .container .title {
+  width: 100%;
+}
+.quaternary .container .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.quaternary .container .content .image {
+  aspect-ratio: 16/9;
+  margin: 0 auto;
+  width: 20rem;
+  background-image: url("/media/ct.png");
+  background-size: cover;
+  box-shadow: .125rem .125rem .25rem 0 #00000080;
+}

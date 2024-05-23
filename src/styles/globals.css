@@ -121,13 +121,15 @@ a {
   display: flex;
   position: sticky;
   top: 0;
+  padding: 0 1rem;
   height: 4.5rem;
-  width: 100%;
+  width: auto;
   background: #6F54A4;
   z-index: 255;
 }
 .header .logo {
   margin: .5rem;
+  margin-right: 2rem;
   height: auto;
   width: 12rem;
   background-image: url("/media/DFF_Horiz_White.webp");
@@ -137,7 +139,19 @@ a {
 .header .links {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   height: auto;
-  width: 100%;
-  background: red;
+  width: auto;
+}
+.header .links a {
+  padding: 1.4rem 1rem;
+  height: auto;
+  width: max-content;
+  color: #eee;
+  text-decoration: none;
+  transition: background-color .125s, color .125s;
+}
+.header .links a:hover {
+  background: #eee;
+  color: #6F54A4;
 }

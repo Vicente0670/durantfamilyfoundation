@@ -1,0 +1,54 @@
+.primary {
+  height: auto;
+  background-image: url("/media/bg4.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.primary .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 7rem 1rem;
+  height: 100%;
+  background: #ffffffcc;
+}
+.primary .container .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 25rem;
+  max-width: 20rem;
+  min-width: none;
+  background: #4a2b8820;
+  outline: 1px solid #6F54A4;
+  border-radius: 3.5rem;
+}
+.primary .container .profile .image {
+  margin: 1rem 0;
+  aspect-ratio: 1;
+  width: 7rem;
+  background: purple;
+  border-radius: 5rem;
+}
+.primary .container .profile .image[aria-label="kevin"] {
+  background-image: url("/media/bio/mama.jpg");
+  background-size: 550%;
+  background-position: 47% 20%;
+}
+.primary .container .profile .image[aria-label="mother"] {
+  background-image: url("/media/bio/mama.jpg");
+  background-size: 550%;
+  background-position: 47% 20%;
+}
+.primary .container .profile .image[aria-label="brother"] {
+  background-image: url("/media/bio/mama.jpg");
+  background-size: 550%;
+  background-position: 47% 20%;
+}
+.primary .container .profile .text {
+  margin: 2rem 1rem;
+  margin-top: 0;
+  text-align: center;
+}

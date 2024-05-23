@@ -91,7 +91,7 @@
 }
 .interactiveEmblem .info {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   position: absolute;
   height: 100%;

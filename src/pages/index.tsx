@@ -1,17 +1,10 @@
 import home from "@/styles/Home.module.css";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <script src="/scripts/index.js" defer />
-
-      <div className="loader">
-        <div className="loaderImage">
-          <img src="/media/DFF-Shield.webp" />
-        </div>
-      </div>
 
       <div className={home.interactiveEmblem} id="interactiveEmblem">
         <div className={home.exit} id="exit"><p>X</p></div>
@@ -49,7 +42,7 @@ export default function Home() {
           <div className={home.infoContainer}>
             <h3>Our Mission</h3>
             <p>The mission of the Durant Family Charitable Foundation is to enrich the lives of youth, their families and community through education, athletic, and social programs.</p>
-            <Link className={home.button} href="/">Discover our Programs</Link>
+            <Link className={home.button} href="/programs">Discover our Programs</Link>
           </div>
         </div>
       </div>
