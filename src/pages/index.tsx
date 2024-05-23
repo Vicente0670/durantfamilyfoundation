@@ -57,7 +57,10 @@ export default function Home() {
             <p>To enter in the most distracting and honest way possible, even though this isn&apos;t even the right one and I&apos;ve been lying to you all this whole entire time just to make up space for the actual statement.</p>
           </div>
           <div className={home.carousel}>
-            
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
         </div>
       </div>

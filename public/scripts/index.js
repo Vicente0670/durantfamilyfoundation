@@ -1,4 +1,4 @@
-  var background = [], icon, interactiveEmblem, emblemButton = [], exit, info, infoParagraph, miniExit;
+  var background = [], icon, interactiveEmblem, emblem, emblemButton = [], exit, info, infoParagraph, miniExit;
 function Loader() {
   background.push(document.getElementById("main"));
   background.push(document.getElementById("secondary"));
@@ -9,13 +9,14 @@ function Loader() {
   icon = document.getElementById("icon");
   icon.addEventListener("click", iconPresent);
   interactiveEmblem = document.getElementById("interactiveEmblem");
+  emblem = document.getElementById("e-base");
   emblemButton.push(document.getElementById("e-flower"));
   emblemButton.push(document.getElementById("e-county"));
   emblemButton.push(document.getElementById("e-person"));
   emblemButton.push(document.getElementById("e-grad"));
   for (i = 0; i < emblemButton.length; i++) {
     emblemButton[i].addEventListener("click", infoTextShow);
-    emblemButton[i].setAttribute("aria-label", ("text-" + [i]))
+    emblemButton[i].children[0].setAttribute("aria-label", ("text-" + [i]))
   }
 
   exit = document.getElementById("exit");
@@ -77,7 +78,44 @@ function iconReset() {
   }, 250);
 }
 function infoTextShow(e) {
-  console.log(e);
+  let x = e.target.getAttribute("aria-label");
+  let filter = "brightness(1.5)";
+  let scale = 1.5;
+  let zIndex = 257;
+
+  info.style.opacity = 1;
+  info.style.pointerEvents = "all";
+  infoParagraph[0].style.opacity = 1;
+  miniExit.style.pointerEvents = "all";
+  emblem.style.filter = "blur(1rem)";
+  emblemButton.forEach((e) => {
+    e.style.filter = "blur(1rem)";
+  });
+  if (x === "text-0") {
+    infoParagraph[1].style.opacity = 1;
+    emblemButton[0].style.filter = filter;
+    emblemButton[0].style.scale = scale;
+    emblemButton[0].style.zIndex = zIndex;
+    emblemButton[0].style.translate = "12.5% 33%";
+  }
+  else if (x === "text-1") {
+    infoParagraph[2].style.opacity = 1;
+    emblemButton[1].style.filter = filter;
+    emblemButton[1].style.scale = scale;
+  }
+  else if (x === "text-2") {
+    infoParagraph[3].style.opacity = 1;
+    emblemButton[2].style.filter = filter;
+    emblemButton[2].style.scale = scale;
+  }
+  else if (x === "text-3") {
+    infoParagraph[4].style.opacity = 1;
+    emblemButton[3].style.filter = filter;
+    emblemButton[3].style.scale = scale;
+  }
+  else {
+    return;
+  }
 }
 function infoExit() {
   info.style.opacity = 0;
@@ -86,6 +124,12 @@ function infoExit() {
     e.style.opacity = 0;
   });
   miniExit.style.pointerEvents = "none";
+  emblem.style.filter = "none";
+  emblemButton.forEach((e) => {
+    e.style.filter = "none";
+    e.style.scale = 1;
+    e.style.translate = "none";
+  });
 }
 document.addEventListener("DOMContentLoaded", Loader);
 // INFO FOR THE FOUNDATION:
