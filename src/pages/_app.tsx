@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import Script from "next/script";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -24,7 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" property="og:description" content="The Durant Family Foundation's Website." />
         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
-      <script src="/scripts/main.js" async />
+      <Script src="/scripts/main.js" />
       
       <div className="header">
         <div className="logo"></div>
