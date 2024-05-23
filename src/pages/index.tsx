@@ -1,4 +1,5 @@
 import home from "@/styles/Home.module.css";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -20,10 +21,10 @@ export default function Home() {
         <div className={home.grad} id="e-grad"><div></div></div>
         <div className={home.info} id="info">
           <div className={home.miniExit}><p>X</p></div>
-          <p>Symbolic of his love and passion for education and people who are educated.</p>
-          <p>infomration 2</p>
-          <p>hajahahahah 3</p>
-          <p>This emblem represends our desire and passion to </p>
+          <p>This rose on our emblem represends our desire and passion for education and academic success. We want to educate others and see others succeed academically. We want others to knowledgeable and understand the important steps in life, and that's part of our mission and future goals.</p>
+          <p></p>
+          <p></p>
+          <p></p>
         </div>
       </div>
 
@@ -31,8 +32,8 @@ export default function Home() {
         <div className={home.container}>
           <div className={home.infoContainer}>
             <h1>Durant Family Charitable Foundation</h1><br/>
-            <p>A credible, non-profit organization founded to help others since 2013.</p>
-            <p>Interact with the emblem to get started!</p>
+            <p>A non-profit organization founded to help students achieve academic and personal greatness since 2013.</p>
+            <p>Interact with the emblem to know about our origins!</p>
           </div>
           <div className={home.iconContainer} id="icon"></div>
         </div>
@@ -47,6 +48,7 @@ export default function Home() {
           <div className={home.infoContainer}>
             <h3>Our Mission</h3>
             <p>The mission of the Durant Family Charitable Foundation is to enrich the lives of youth, their families and community through education, athletic, and social programs.</p>
+            <p></p>
             <h3></h3>
           </div>
         </div>
@@ -54,15 +56,20 @@ export default function Home() {
       <div className={home.tertiary} id="tertiary">
         <div className={home.container}>
           <div className={home.title}>
-            <h2>!</h2>
-            <p>aaaaaaaaaaaaaa</p>
+            <h2>Learn about us!</h2>
+            <p>From the founders to the helpers, </p>
             <a href="/bio" title="Learn about the people behind the Durant Family Charitable Foundation."></a>
           </div>
           <div className={home.carousel}>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div className={home.container2} id="carouselContainer">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
           </div>
         </div>
       </div>

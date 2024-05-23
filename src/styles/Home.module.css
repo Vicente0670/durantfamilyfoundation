@@ -23,7 +23,7 @@
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0;
-  transition: transform .25s, opacity .25s;
+  transition: transform .25s, opacity .25s, filter .25s;
   pointer-events: none;
   cursor: pointer;
 }
@@ -134,7 +134,7 @@
 }
 .interactiveEmblem .person {
   background-image: url("/media/emblem/person.png");
-  background-size: 35rem;
+  background-size: 38rem;
 }
 .interactiveEmblem .grad {
   background-image: url("/media/emblem/grad.png");
@@ -154,6 +154,7 @@
 /* On Hover */
 .interactiveEmblem .base:has(.interactiveEmblem .base .div:hover) {
   transform: scale(1.05);
+  filter: brightness(1.5);
 }
 /* Sections */
 .main {
@@ -184,6 +185,7 @@
   max-width: 40rem;
 }
 .main .infoContainer h1 {
+  margin-top: 3rem;
   font-weight: 200;
   overflow-wrap: break-word;
   hyphens: manual;
@@ -236,7 +238,7 @@
   height: auto;
   width: auto;
   background: linear-gradient(180deg, #000, #6F54A4);
-  box-shadow: .75rem .75rem .5rem 0 #00000080;
+  box-shadow: .25rem .25rem .5rem 0 #00000080;
 }
 .secondary .videoContainer video {
   aspect-ratio: 16/9;
@@ -280,13 +282,59 @@
   height: auto;
   width: auto;
   max-width: 30rem;
-  resize: vertical;
 }
 .tertiary .carousel {
   padding: 1rem 0;
   height: auto;
   width: 100%;
   background: #7f64b580;
+  overflow-x: hidden;
+}
+.tertiary .carousel .container2 {
+  display: flex;
+  gap: 1rem;
+  height: auto;
+  width: max-content;
+  animation: carouselSlide 30s linear infinite;
+}
+.tertiary .carousel:hover .container2 {
+  animation-play-state: paused;
+}
+.tertiary .carousel .container2 div {
+  aspect-ratio: 16/9;
+  height: 12rem;
+  border-radius: .5rem;
+  background-size: cover;
+  background-position: center;
+}
+@keyframes carouselSlide {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.tertiary .carousel .container2 div:nth-child(1) {
+  background-image: url("/media/carousel/c-1.jpg");
+}
+.tertiary .carousel .container2 div:nth-child(2) {
+  background-image: url("/media/carousel/c-2.jpg");
+}
+.tertiary .carousel .container2 div:nth-child(3) {
+  background-image: url("/media/carousel/c-3.jpg");
+}
+.tertiary .carousel .container2 div:nth-child(4) {
+  background-image: url("/media/carousel/c-4.jpg");
+}
+.tertiary .carousel .container2 div:nth-child(5) {
+  background-image: url("/media/carousel/c-5.jpg");
+}
+.tertiary .carousel .container2 div:nth-child(6) {
+  background-image: url("/media/carousel/c-6.jpg");
+}
+.tertiary .carousel .container2 div:nth-child(7) {
+  background-image: url("/media/carousel/c-7.jpg");
 }
 @media screen and (max-width: 70rem) {
   .main .infoContainer h1 {
@@ -296,7 +344,7 @@
     flex-wrap: wrap-reverse;
   }
 }
-@media screen and (max-width: 35rem) {
+@media screen and (max-width: 38rem) {
   .interactiveEmblem .person {
     background-size: 100%;
   }

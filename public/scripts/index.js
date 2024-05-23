@@ -79,9 +79,6 @@ function iconReset() {
 }
 function infoTextShow(e) {
   let x = e.target.getAttribute("aria-label");
-  let filter = "brightness(1.75)";
-  let scale = 2;
-  let zIndex = 257;
 
   info.style.opacity = 1;
   info.style.pointerEvents = "all";
@@ -93,10 +90,7 @@ function infoTextShow(e) {
   });
   if (x === "text-0") {
     infoParagraph[1].style.opacity = 1;
-    emblemButton[0].style.filter = filter;
-    emblemButton[0].style.scale = scale;
-    emblemButton[0].style.zIndex = zIndex;
-    emblemButton[0].style.translate = "-5% 50%";
+    info.style.backgroundImage = "url('/media/emblem/flower.png')";
   }
   else if (x === "text-1") {
     infoParagraph[2].style.opacity = 1;
@@ -104,17 +98,11 @@ function infoTextShow(e) {
   }
   else if (x === "text-2") {
     infoParagraph[3].style.opacity = 1;
-    emblemButton[2].style.filter = filter;
-    emblemButton[2].style.scale = scale;
-    emblemButton[2].style.zIndex = zIndex;
-    emblemButton[2].style.translate = "-5% -33%";
+    info.style.backgroundImage = "url('/media/emblem/person.png')";
   }
   else if (x === "text-3") {
     infoParagraph[4].style.opacity = 1;
-    emblemButton[3].style.filter = filter;
-    emblemButton[3].style.scale = scale;
-    emblemButton[3].style.zIndex = zIndex;
-    emblemButton[3].style.translate = "-40% -33%";
+    info.style.backgroundImage = "url('/media/emblem/grad.png')";
   }
   else {
     return;
@@ -123,6 +111,7 @@ function infoTextShow(e) {
 function infoExit() {
   info.style.opacity = 0;
   info.style.pointerEvents = "none";
+  info.style.backgroundImage = "none";
   infoParagraph.forEach((e) => {
     e.style.opacity = 0;
   });

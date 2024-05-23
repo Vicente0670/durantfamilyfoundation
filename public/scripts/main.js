@@ -3,7 +3,7 @@ function appLoad() {
   header = document.querySelector(".header");
   document.addEventListener("scroll", headerScroll);
 }
-//
+// Scrolling Mechanism for Header
 let scrY = window.screen.height * (2/3);
 function headerScroll() {
   let x = document.documentElement.scrollTop;
