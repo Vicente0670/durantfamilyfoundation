@@ -1,3 +1,11 @@
+/* Button */
+.button {
+  margin-top: 2rem;
+  padding: .5rem 1.5rem;
+  outline: .25rem solid #7f64b5;
+  text-decoration: none;
+  transition: background-color .25s, outline-color .25s;
+}
 /* Interactive Emblem */
 .interactiveEmblem {
   display: flex;
@@ -245,6 +253,8 @@
   width: 90vw;
 }
 .secondary .infoContainer {
+  display: flex;
+  flex-direction: column;
   margin: 5rem 1rem;
   height: auto;
   max-width: 30rem;

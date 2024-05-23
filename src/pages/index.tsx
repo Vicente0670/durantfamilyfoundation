@@ -1,5 +1,6 @@
 import home from "@/styles/Home.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
         <div className={home.grad} id="e-grad"><div></div></div>
         <div className={home.info} id="info">
           <div className={home.miniExit}><p>X</p></div>
-          <p>This rose on our emblem represends our desire and passion for education and academic success. We want to educate others and see others succeed academically. We want others to knowledgeable and understand the important steps in life, and that's part of our mission and future goals.</p>
+          <p>This rose on our emblem represends our desire and passion for education and academic success. We want to educate others and see others succeed academically. We want others to knowledgeable and understand the important steps in life, and that&apos;s part of our mission and future goals.</p>
           <p></p>
           <p></p>
           <p></p>
@@ -48,7 +49,7 @@ export default function Home() {
           <div className={home.infoContainer}>
             <h3>Our Mission</h3>
             <p>The mission of the Durant Family Charitable Foundation is to enrich the lives of youth, their families and community through education, athletic, and social programs.</p>
-            <a className={home.button} href="/">Understand our </a>
+            <Link className={home.button} href="/">Discover our Programs</Link>
           </div>
         </div>
       </div>
