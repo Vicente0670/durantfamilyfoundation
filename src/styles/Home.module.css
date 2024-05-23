@@ -352,6 +352,17 @@
 .tertiary .carousel .container2 div:nth-child(7) {
   background-image: url("/media/carousel/c-7.jpg");
 }
+.quaternary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 6rem 0;
+  background: #eee;
+  text-align: center;
+  border-bottom: 1rem solid #6F54A4;
+}
 @media screen and (max-width: 70rem) {
   .main .infoContainer h1 {
     font-size: 4rem;

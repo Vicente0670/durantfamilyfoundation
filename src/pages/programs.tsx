@@ -29,7 +29,7 @@ export default function Programs() {
             <h2>Durant Basketball Program</h2>
           </div>
           <div className={programs.content}>
-            <p>Basketball information here</p>
+            <p>The Durant Basketball Program is a program that we manage where we help people grow and engage through the basketball sport via providing aid through education and athletic growth. We communicate and encourage others to succeed via the sport that started it all.</p>
             <div className={programs.image}></div>
           </div>
         </div>

@@ -16,7 +16,7 @@ export default function Home() {
         <div className={home.info} id="info">
           <div className={home.miniExit}><p>X</p></div>
           <p>The Purple Rose on our emblem is a highlight of Kevin Durant&apos;s grandmother. Kevin Durant&apos;s grandmother&apos;s name is Barbara Durant Davis.</p>
-          <p></p>
+          <p>This is where Kevin Durant himself grew up. This means a lot to them because that's where they first played basketball.</p>
           <p></p>
           <p>This diploma on our emblem represends our desire and passion for education and academic success. We want to educate others and see others succeed academically. We want others to knowledgeable and understand the important steps in life, and that&apos;s part of our mission and future goals.</p>
         </div>
@@ -65,6 +65,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div className={home.quaternary}>
+        <h4>It&apos;s more than just a charity. It&apos;s our future.</h4>
+        <Link href="https://www.teamdurant.com/" className={home.button}>Donate</Link>
       </div>
     </>
   );
